@@ -312,7 +312,7 @@ function numberWithCommas(x) {
 		
 		var c21=$("#c21").val();
 		c21=round(c21, 2);
-		var d21=round((c21*d6)/100, 2);
+		var d21=round(c21, 2);
 		$("#d21").val(d21);
 		 $("#tt_d21").html(numberWithCommas(d21));
 		
@@ -428,13 +428,13 @@ function numberWithCommas(x) {
 		 
 		 
 	 var d28=round((d26/(parseFloat(d8)+parseFloat(d25))),2);
-		//d28=d28*100;
+		d28=d28*100;
 		d28=round(d28, 3);
 		$("#d28").val(d28);
 		 $("#tt_d28").html(numberWithCommas(d28));
 		 
 		 var g28=round((g26/(parseFloat(g8)+parseFloat(g25))),2);
-		//g28=g28*100;
+		g28=g28*100;
 		$("#g28").val(g28);
 		 $("#tt_g28").html(numberWithCommas(g28));	 
 		 
@@ -444,12 +444,12 @@ function numberWithCommas(x) {
 		
 		
 		 var d29=round((d28*12)/b15,2);
-		//d29=d29*100;
+		//d29=d29;
 		$("#d29").val(d29);
 		 $("#tt_d29").html(numberWithCommas(d29));
 		 
 		 var g29=round((g28*12)/e15,2);
-		//g29=g29*100;
+		g29=g29*100;
 		$("#g29").val(g29);
 		 $("#tt_g29").html(numberWithCommas(g29));	 
 		
@@ -492,7 +492,7 @@ function numberWithCommas(x) {
 	
 	
 	var d34=round(d32/(parseFloat(d8)+parseFloat(d25)),2);
-		//d34=d34*100;
+		d34=d34*100;
 		d34=round(d34,3);
 		$("#d34").val(d34);
 		 $("#tt_d34").html(numberWithCommas(d34));
@@ -508,7 +508,7 @@ function numberWithCommas(x) {
 		 
 		 
 		 var g34=round(g32/(parseFloat(g8)+parseFloat(g25)),2);
-		//g34=g34*100;
+		g34=g34*100;
 		
 		g34=round(g34,3);
 		
